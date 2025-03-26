@@ -33,11 +33,8 @@ class HTTPServer:
 
             path = request.decode().split(" ")[1]
             if path == "/":
-                response = (
-                    "HTTP/1.1 200 OK\r\n"
-                    "Content-Type: text/html\r\n"
-                    "\r\n"
-                    "<!DOCTYPE html>
+                response_body = """\
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -97,9 +94,9 @@ class HTTPServer:
         </footer>
     </div>
 </body>
-</html>"
-                    "</html>"
-                )
+</html>
+"""
+                response = f"HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n{response_body}"
             else:
                 response = "HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not Found</h1>"
 
