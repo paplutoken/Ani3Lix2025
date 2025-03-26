@@ -37,24 +37,67 @@ class HTTPServer:
                     "HTTP/1.1 200 OK\r\n"
                     "Content-Type: text/html\r\n"
                     "\r\n"
-                    "<!DOCTYPE html>"
-                    "<html lang='en'>"
-                    "<head>"
-                    "<meta charset='UTF-8'>"
-                    "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-                    "<title>Teleshare</title>"
-                    "<style>"
-                    "body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; }"  # noqa: E501
-                    ".container { text-align: center; }"
-                    "a { text-decoration: none; color: #007bff; }"
-                    "</style>"
-                    "</head>"
-                    "<body>"
-                    "<div class='container'>"
-                    "<h1>Teleshare</h1>"
-                    "<p><a href='https://github.com/zawsq/Teleshare' target='_blank'>Visit the Teleshare GitHub Repository</a></p>"  # noqa: E501
-                    "</div>"
-                    "</body>"
+                    "<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleshare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teleshare</h1>
+        <p>Your hub for sharing links and anime updates!</p>
+        
+        <h2>🔗 Links</h2>
+        <a href="https://t.me/Anim3chat" target="_blank">Ani3Lix Chat</a>
+        <a href="https://t.me/Ani3lix_clan" target="_blank">Join My Telegram</a>
+        <a href="https://t.me/Ongoing_Anime_Episodes" target="_blank">Visit Ani3Lix (Ongoing Anime Episodes)</a>
+        
+        <h2>🔥 Latest Anime Updates</h2>
+        <p>Check out the latest episodes and news!</p>
+        <a href="https://myanimelist.net" target="_blank">MyAnimeList</a>
+        <a href="https://anilist.co" target="_blank">AniList</a>
+        
+        <footer>
+            <p>&copy; 2025 Ani3Lix | Created by The Fool</p>
+        </footer>
+    </div>
+</body>
+</html>"
                     "</html>"
                 )
             else:
