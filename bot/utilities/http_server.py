@@ -76,13 +76,13 @@ class HTTPServer:
 </head>
 <body>
     <div class="container">
-        <h1>Teleshare</h1>
+        <h1>Ani3Lix</h1>
         <p>Your hub for sharing links and anime updates!</p>
         
         <h2>🔗 Links</h2>
+        <a href="https://t.me/Ongoing_Anime_Episodes" target="_blank">Ani3Lix (Ongoing Anime Episodes)</a>
+        <a href="https://t.me/Ani3lix_clan" target="_blank">Ani3Lix</a>
         <a href="https://t.me/Anim3chat" target="_blank">Ani3Lix Chat</a>
-        <a href="https://t.me/Ani3lix_clan" target="_blank">Join My Telegram</a>
-        <a href="https://t.me/Ongoing_Anime_Episodes" target="_blank">Visit Ani3Lix (Ongoing Anime Episodes)</a>
         
         <h2>🔥 Latest Anime Updates</h2>
         <p>Check out the latest episodes and news!</p>
